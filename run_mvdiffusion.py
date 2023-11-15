@@ -124,7 +124,8 @@ class MultiViewDiffusion:
             validation_dataset,
             batch_size=self.cfg.validation_batch_size, 
             shuffle=False, 
-            num_workers=self.cfg.dataloader_num_workers
+            num_workers=self.cfg.dataloader_num_workers,
+            pin_memory=True
         )
 
         os.makedirs(self.cfg.save_dir, exist_ok=True)

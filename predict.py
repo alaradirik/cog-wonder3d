@@ -47,6 +47,7 @@ class Predictor(BasePredictor):
 
         # Generate alternate views
         self.mvdiffusion_model.generate_views(seed=random_seed)
+        print("generated views")
 
         # Geometry fusion to generate 3D asset
         filepaths = run_wonder3d(num_steps=num_steps, seed=random_seed)

@@ -116,7 +116,7 @@ class BlenderDataModule(pl.LightningDataModule):
         sampler = None
         return DataLoader(
             dataset, 
-            num_workers=os.cpu_count(), 
+            num_workers=4, 
             batch_size=batch_size,
             pin_memory=True,
             sampler=sampler

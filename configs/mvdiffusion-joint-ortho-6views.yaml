@@ -14,7 +14,7 @@ save_dir: 'outputs/'
 pred_type: 'joint'
 seed: 42
 validation_batch_size: 1
-dataloader_num_workers: 16
+dataloader_num_workers: 1
 
 local_rank: -1
 

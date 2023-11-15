@@ -39,7 +39,7 @@ build:
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.0.1/pget" 
     - chmod +x /usr/local/bin/pget
-    - export OMP_NUM_THREADS=8
+    - export OMP_NUM_THREADS=4
     - 'export TCNN_CUDA_ARCHITECTURES="86" 
       && pip install git+https://github.com/NVlabs/tiny-cuda-nn.git@212104156403bd87616c1a4f73a1c5f2c2e172a9#subdirectory=bindings/torch'
 
